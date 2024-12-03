@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* Минимальная высота на весь экран */
+    overflow: hidden;
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Img/forest2.webp');
+    /* Правильный путь */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    filter: blur(5px);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    /* border-bottom: 2px solid black; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 15px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo p {
+    margin-top: 5px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* 
+header {
+    /* background-color: #ABABAB; */
+
+
+.heading {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #373C3F;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #373C3F;
+}
+
+.heading h3,
+.heading h4 {
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+
+.navigbar {
+    width: 100%;
+    display: flex;
+    border-top: 2px solid black;
+    justify-content: center;
+}
+
+.navigbar ul {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    gap: 20px 50px;
+    margin: 20px 20px 20px 20px;
+    justify-items: center;
+}
+
+.navigbar ul li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    align-items: center;
+    transition: all 0.2s;
+    justify-content: center;
+    border: 2px solid #373C3F;
+    background-color: #373C3F;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.navigbar ul li a:hover {
+    transform: scale(1.1);
+}
+
+.navigbar ul li a:active {
+    background-color: gray;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    border-bottom: 2px solid black;
+}
+
+.leftside {
+    width: 30%;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.textleftside {
+    margin: 20px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textleftside h4 {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 600;
+}
+
+.textleftside a {
+    position: sticky;
+    top: 0;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+
+.textleftside a:hover {
+    font-size: 25px;
+}
+
+
+.midleside {
+    width: 70%;
+    border-top: 2px solid black;
+}
+
+.firstblockmidleside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headingfirstblock {
+    margin: 20px;
+    /* border: #373C3F;
+    border-radius: 8px; */
+    padding: 10px;
+    /* background-color: #373C3F; */
+}
+
+.firstblockmidleside h2 {
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.firstblockmidleside p {
+    font-family: sans-serif;
+    width: 400px;
+    /* color: white; */
+    font-weight: 500;
+    /* margin: 30px; */
+    /* margin-bottom: 5px; */
+}
+
+.image img {
+    left: 700px;
+    top: -20px;
+    width: 150px;
+    height: 150px;
+    margin: 20px 50px 0px 0px;
+}
+
+.secondblock {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* border: #373C3F;
+    border-radius: 5px; */
+    /* border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #373C3F; */
+    /* padding: 10px; */
+}
+
+.secondblock h3 {
+    font-family: sans-serif;
+    /* color: white; */
+    font-weight: 600;
+    margin: 30px;
+}
+
+.secondblock p {
+    font-family: sans-serif;
+    /* color: white; */
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 30px;
+}
+
+.videoconteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.videoconteiner #videocontent {
+    justify-self: center;
+    width: 400px;
+    height: 300px;
+}
+
+.videoconteiner #video {
+    justify-self: center;
+    width: 400px;
+    height: 280px;
+    margin-bottom: 10px;
+}
+
+.thirdblock {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    /* border: #373C3F;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: #373C3F; */
+    padding: 10px;
+}
+
+.thirdblock h3 {
+    font-family: sans-serif;
+    /* color: white; */
+    font-weight: 600;
+    margin: 30px;
+}
+
+.thirdblock p {
+    font-family: sans-serif;
+    /* color: white; */
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* Размещаем элементы по краям */
+    align-items: center;
+    /* Центрируем элементы по вертикали */
+    padding: 10px;
+    /* Можно добавить отступы, чтобы элементы не прилипали к краям */
+}
+
+.by {
+    font-family: sans-serif;
+    margin: 0 auto;
+    /* Для центрирования текста */
+    text-align: center;
+    /* Центрируем текст внутри блока */
+}
+
+.boost img {
+    width: 40px;
+    height: 40px;
+}
