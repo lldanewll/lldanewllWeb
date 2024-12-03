@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="para4.css">
+</head>
+
+<body>
+    <script src="para13.js"></script>
+    <header id="heading">
+        <div class="logo">
+            <div class="sqare"><img src="Img/ichigo.jpg" alt=""></div>
+            <p>Logo</p>
+        </div>
+        <div class="heading">
+            <h4>ЭФБО-03-23</h4>
+            <h3>Новиков Даниил Дмитриевич</h3>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Навигация</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Семестры</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="para4.html">Первый семестр</a></li>
+                            <li><a class="dropdown-item" href="#">Второй семестр</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="para3.html">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Авторизация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="background-container">
+        <div class="content">
+            <div class="container">
+                <div class="d-none d-sm-block leftside">
+                    <div class="textleftside">
+                        <h4>Навигация по странице</h4>
+                        <a href="#secondblock">Лекции</a>
+                        <a href="#thirdblock">Практики</a>
+                        <a href="#fourblock">Адрес вуза</a>
+                        <a href="#fifthblock">Рабочая программа</a>
+                    </div>
+                </div>
+                <div class="midleside">
+                    <div class="firstblockmidleside">
+                        <div class="headingfirstblock">
+                            <h2>Первый семестр</h2>
+                        </div>
+                    </div>
+                    <button id="show-lectures" class="btn btn-success my-3">Показать лекции</button>
+                    <div class="secondblock" id="secondblock">
+
+                        <h3>Лекции</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Номер</th>
+                                    <th>Тема</th>
+                                    <th>Посещение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Основы языка HIML</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Углубленное изучение HIML</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Основы работы с CSS</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Адаптивная верстка Flexbox и Grid Layout</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Bootstrap - разработка с фреймворком</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Основы языка JavaScript</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Работа с DOM и событиями в JavaScript</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Введение в GitHub и GitHub Pages</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="thirdblock" id="thirdblock">
+                        <h3>Практики</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Номер</th>
+                                    <th>Тема</th>
+                                    <th>Посещение</th>
+                                    <th>Выполнение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Основы языка HIML</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Формы и кнопки HIML</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Таблицы и интерактивные элементы HTML</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Основы работы с CSS</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Работа с классами CSS</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Работа с сатками и разметкой HTML</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Адаптивная верстка</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Bootstrap</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Основы языка JavaScript</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Базовые задачи на JS</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>DOM-структура приложений и работа с объектами языка JS</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Встраивание скриптов</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Отладка сценариев</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>Анимации и работа с ними</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>GitHub</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>Защита проекта</td>
+                                    <td><input type="checkbox"></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Занятие 1
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Что-то там</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Занятие 2
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Что-то там</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Занятие 3
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Что-то тамЧто-то тамЧто-то там</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Img/forest.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Img/forest.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Img/forest.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="fourblock" id="fourblock">
+                        <h3>Занятия проходят по адресу ул.Проспект Вернадского 78</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.2034234573774!2d37.47988281604818!3d55.6779239805349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b6107587c27%3A0x35dc35215824e643!2z0J_QsNGA0Log0KDQtdC00LDQvdCwLCA3OCwg0JzQvtGB0LrQstCwLCDQnNC-0YHQutCy0LAsIDE5MzMwMA!5e0!3m2!1sru!2sru!4v1695476529655!5m2!1sru!2sru"
+                            frameborder="0"></iframe>
+                    </div>
+                    <div class="fifthblock" id="fifthblock">
+                        <h3>Рабочая программа(Просто манга)</h3>
+                        <object data="documents/Manga.pdf" type=""></object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="by">
+            <h3>Новиков Даниил, 2024</h3>
+        </div>
+        <div class="boost" id="boost">
+            <a href="#heading">
+                <img src="Img/arrow.webp" alt="" width="40px" height="40px">
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
